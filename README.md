@@ -57,3 +57,48 @@ total 4
 ```
 
 La taille et la date ont changées mais pas l'inode !  
+
+## 1.2 Renommage, type et extention 
+
+```sh
+mv bonjour ave 
+```
+
+Nous donne donc : 
+
+```sh
+ls -l
+total 4
+-rw-rw-r-- 1 nb nb 15 May 21 10:48 ave
+```
+
+Avec : 
+```sh
+file ave 
+ave: ASCII text
+```
+
+`ave` est un fichier ASCII !
+
+On renomme avec : 
+```sh
+mv ave ave.png
+```
+
+On voit que le type reste le même ! 
+```sh
+file ave.png 
+ave.png: ASCII text
+```
+
+Le contenu n'a pas changé ! 
+
+```sh
+cat ave.txt 
+salut le monde
+```
+On met la bonne extention : 
+```sh
+mv ave.png ave.txt
+```
+
