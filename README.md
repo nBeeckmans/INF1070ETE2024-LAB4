@@ -38,6 +38,13 @@ vim bonjour
 ```
 éditer et sauvegarder !
 
+```sh
+ls -li
+total 4
+38806470 -rw-rw-r-- 1 nb nb 15 May 21 10:48 bonjour
+```
+La taille et la date ont changées mais pas l'inode ! (Attention : Vim peut créer un fichier temporaire et écraser le fichier bonjour lors de la sauvegarde ! L'inode pourrait donc changer) 
+
 Si on utilise une redirection : 
 ```sh
 echo "salut le monde" > bonjour
