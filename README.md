@@ -34,8 +34,19 @@ L'inode ne sera probablement pas le même pour vous !
 ## Pour éditer le fichier : 
 Si on utilise vim :
 ```sh
+vim bonjour
 ```
+éditer et sauvegarder !
 
 Si on utilise une redirection : 
 ```sh
+echo "salut le monde" > bonjour
 ```
+
+```sh
+ls -li
+total 4
+38806470 -rw-rw-r-- 1 nb nb 15 May 21 10:27 bonjour
+```
+
+La taille et la date ont changées mais pas l'inode !  
