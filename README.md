@@ -178,7 +178,7 @@ salut le monde
 cat nuit.txt~
 Bonne nuit
 ```
-
+```sh 
 $ cp nuit.txt ave.txt 
 nb@pop-os:~/tmp
 $ stat nuit.txt
@@ -222,5 +222,11 @@ Access: 2024-05-22 13:39:35.637821124 -0400
 Modify: 2024-05-22 13:39:35.641821204 -0400
 Change: 2024-05-22 14:19:40.336796521 -0400
  Birth: 2024-05-22 14:19:40.332796465 -0400
-nb@pop-os:~/tmp
-$ 
+```
+
+
+# Repertoires 
+
+
+mkdir -p Web/inf3190/examen Web/inf3190/quiz Web/inf3190/tp Web/INF5190/evaluation
+mkdir -p Web/{inf3190/{examen,quiz,tp},INF5190/evaluation}
